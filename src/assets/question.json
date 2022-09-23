@@ -1,0 +1,194 @@
+{
+  "questions": [
+    {
+      "questionText": "The job satisfaction of an employee is depend on the",
+      "options": [
+        {
+          "text": "Behaviour"
+        },
+        {
+          "text": "Attitude",
+          "correct": true
+        },
+        {
+          "text": "Personality"
+        },
+        {
+          "text": "Employer"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "Success of each organization is depending upon the performance of",
+      "options": [
+        {
+          "text": "Employee",
+          "correct": true
+        },
+        {
+          "text": "Vendor"
+        },
+        {
+          "text": "Management"
+        },
+        {
+          "text": "Employer"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "A satisfied employee will be a",
+      "options": [
+        {
+          "text": "Motivator to others"
+        },
+        {
+          "text": "Manager"
+        },
+        {
+          "text": "Team Leader"
+        },
+        {
+          "text": "High performer",
+          "correct": true
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "is not a capability of an employee having Positive attitude",
+      "options": [
+        {
+          "text": "Focus"
+        },
+        {
+          "text": "Pessimism",
+          "correct": true
+        },
+        {
+          "text": "Creativity"
+        },
+        {
+          "text": "Confidence"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "Which one is not a benefit to employee which results through positive attitude of an employee",
+      "options": [
+        {
+          "text": "Promotion",
+          "correct": true
+        },
+        {
+          "text": "Less stress"
+        },
+        {
+          "text": "Job security"
+        },
+        {
+          "text": "Enjoying life"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "Belief, opinion, knowledge, emotions feelings intention are the components of",
+      "options": [
+        {
+          "text": "Personality"
+        },
+        {
+          "text": "OB"
+        },
+        {
+          "text": "Job satisfaction"
+        },
+        {
+          "text": "Attitude",
+          "correct": true
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "The attitude based on Beliefs, opinion, Knowledge, or information about the particular event which the employee possesses is under component of Attitude.",
+      "options": [
+        {
+          "text": "Behavioral"
+        },
+        {
+          "text": "Cognitive",
+          "correct": true
+        },
+        {
+          "text": "Affective"
+        },
+        {
+          "text": "Positive"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "The attitude based on the concept that “every individual will have an Intention to react in a certain way toward something is “ under component of Attitude.",
+      "options": [
+        {
+          "text": "Cognitive"
+        },
+        {
+          "text": "Affective"
+        },
+        {
+          "text": "Behavioral",
+          "correct": true
+        },
+        {
+          "text": "Positive"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "Which of the following is NOT a part of the immediate social environment that can influence employee motivation?",
+      "options": [
+        {
+          "text": "subordinates"
+        },
+        {
+          "text": "safety issues",
+          "correct": true
+        },
+        {
+          "text": "supervisors"
+        },
+        {
+          "text": "workgroup peers"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "_____ is the set of forces that energize, direct, and sustain behavior.",
+      "options": [
+        {
+          "text": "Motivation",
+          "correct": true
+        },
+        {
+          "text": "Expectancy"
+        },
+        {
+          "text": "Empowerment"
+        },
+        {
+          "text": "Socialization"
+        }
+      ],
+      "explanation": ""
+    }
+  ]
+}

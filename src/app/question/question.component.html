@@ -1,0 +1,116 @@
+<div class="container py-2 mt-3 bg-info">
+  <div class="row g-2">
+    <div class="col-md-6 mt-4">
+      <img
+        src="../../assets/Images/AVGfx Logo.png"
+        alt="Bootstrap"
+        width="50"
+        class="ms-5"
+      />
+    </div>
+    <div class="col-md-6 mt-4">
+      <h2 class="headText">Online Test Application</h2>
+    </div>
+  </div>
+
+  <div class="row col-md-12 text-center mt-3">
+    <div class="col-md-4">
+      <h6>Welcome : - {{ name }}</h6>
+    </div>
+    <div class="col-md-4">
+      <h6>Mobile : - {{ mobile }}</h6>
+    </div>
+    <div class="col-md-4">
+      <h6>Email : - {{ email }}</h6>
+    </div>
+  </div>
+  <ng-container *ngIf="!isQuizCompleted">
+    <div class="row g-3 mt-4 text-center">
+      <div class="col-md-4 mt-3 score">
+        <h5 class="score">{{ points }} Score</h5>
+      </div>
+      <div class="col-md-4 remaining">
+        <h5>question {{ currentQuestion + 1 }} of {{ questionList.length }}</h5>
+      </div>
+      <div class="col-md-4 timer">
+        <h5>{{ counter }} <fa-icon [icon]="faClock"></fa-icon></h5>
+      </div>
+    </div>
+    <div class="progress row m-3">
+      <div
+        class="progress-bar progress-bar-striped bg-success"
+        role="progressbar"
+        aria-label="Success striped example"
+        [ngStyle]="{ width: progress + '%' }"
+      ></div>
+    </div>
+    <div class="row mt-3 mx-3">
+      <div class="question bg-warning px-3 mb-3 rounded-3">
+        <h3 class="studentName py-3 px-2">
+          {{ questionList[currentQuestion]?.questionText }}
+        </h3>
+      </div>
+      <div class="ansOptions">
+        <ol
+          class="ansLists"
+          *ngFor="let option of questionList[currentQuestion]?.options"
+        >
+          <li class="list" (click)="answer(currentQuestion + 1, option)">
+            <div
+              appChangeBG
+              [isCorrect]="option.correct"
+              class="card my-2 p-2 answer"
+            >
+              <h5>{{ option.text }}</h5>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="row g-3 text-center">
+      <div class="col-md-4">
+        <button
+          [disabled]="currentQuestion === 0"
+          class="btn btn-primary"
+          (click)="previousQuestion()"
+        >
+          <fa-icon [icon]="faChevronCircleLeft" class="fa-2x"></fa-icon>
+        </button>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-primary" (click)="resetQuiz()">
+          <fa-icon [icon]="faRefresh" class="fa-2x"></fa-icon>
+        </button>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-primary" (click)="nextQuestion()">
+          <fa-icon [icon]="faChevronCircleRight" class="fa-2x"></fa-icon>
+        </button>
+      </div>
+    </div>
+  </ng-container>
+
+  <<ng-container *ngIf="isQuizCompleted">
+    <div class="container m-auto bg-light">
+      <div class="row col-md-12 py-3">
+        <div class="col-md-6">
+          <img
+            src="../../assets/Images/card-template-with-fireworks-party-horns_1308-3021.webp"
+            width="300px"
+            class="mt-1"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Congratulations</h3>
+          <h3>You have completed the quiz</h3>
+          <h3>Your Result Below</h3>
+          <p>Total Questions Attempt : - {{ questionList.length }}</p>
+          <p>Total Correct Answers : - {{ correctAnswer }}</p>
+          <p>Total Wrong Answers : - {{ inCorrectAnswer }}</p>
+          <p>Your Total Score is : - {{ points }} points</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

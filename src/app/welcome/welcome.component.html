@@ -1,0 +1,40 @@
+<div class="container bg-light p-3">
+  <div class="row">
+    <h1 class="headingText">Welcome To Online Test Application</h1>
+    <p class="info text-dark fw-bold fs-5">
+      This quiz will contains 10 question and each question is for 10 points.
+    </p>
+    <h4 class="rules">Rules : -</h4>
+    <ol class="ruleList ps-5">
+      <li class="list">Correct Answer calculate 10 points</li>
+      <li class="list">Incorrect Answer deduct 5 points</li>
+      <li class="list">Answer must be in 60 sec</li>
+      <li class="list">Resfrshing the page will reset the quiz</li>
+    </ol>
+    <h1 class="allTheBest text-center text-primary">All The Best</h1>
+  </div>
+
+  <form class="row col-md-12 mt-3">
+    <div class="col-md-4">
+      <label for="" class="px-2 fw-bold fs-6">Enter Your Name</label>
+      <input type="text" #name class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="" class="pe-x-2 fw-bold fs-6">Enter Your Mobile No</label>
+      <input type="text" class="form-control" #mobile />
+    </div>
+    <div class="col-md-4">
+      <label for="" class="pe-x-2 fw-bold fs-6">Enter Your Email</label>
+      <input type="text" class="form-control" #email />
+    </div>
+    <div class="com-md-6">
+      <button
+        class="btn btn-primary px-5 py-2 fs-5 mt-3"
+        routerLink="/question"
+        (click)="startQuiz()"
+      >
+        Start Quiz
+      </button>
+    </div>
+  </form>
+</div>

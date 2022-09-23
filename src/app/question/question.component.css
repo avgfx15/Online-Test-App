@@ -1,0 +1,16 @@
+.ansOptions {
+  text-align: center;
+}
+.ansLists {
+  padding-left: 0;
+}
+.list {
+  list-style: none;
+}
+.answer {
+  cursor: pointer;
+}
+.answer:hover {
+  border: 2px solid black;
+  margin: 0 auto;
+}
